@@ -25,7 +25,7 @@ resource "aws_acm_certificate" "this" {
   key_algorithm             = var.key_algorithm
 
   options {
-    certificate_transparency_logging_preference = var.certificate_transparency_logging_preference ? "ENABLED" : "DISABLED"
+    certificate_transparency_logging_preference = var.certificate_transparency_logging_preference 
   }
 
   dynamic "validation_option" {
