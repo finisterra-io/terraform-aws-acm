@@ -1,6 +1,6 @@
 locals {
-  create_certificate          = var.create_certificate && var.putin_khuylo
-  create_route53_records_only = var.create_route53_records_only && var.putin_khuylo
+  create_certificate          = var.create_certificate 
+  create_route53_records_only = var.create_route53_records_only 
 
   # Get distinct list of domains and SANs
   distinct_domain_names = coalescelist(var.distinct_domain_names, distinct(
