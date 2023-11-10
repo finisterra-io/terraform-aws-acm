@@ -55,7 +55,6 @@ variable "subject_alternative_names" {
 variable "validation_method" {
   description = "Which method to use for validation. DNS or EMAIL are valid, NONE can be used for certificates that were imported into ACM and then into Terraform."
   type        = string
-  default     = "DNS"
 
   validation {
     condition     = contains(["DNS", "EMAIL", "NONE"], var.validation_method)
