@@ -116,3 +116,9 @@ variable "key_algorithm" {
   type        = string
   default     = null
 }
+
+variable "certificate_authority_arn" {
+  description = "The Amazon Resource Name (ARN) of the private certificate authority (CA) that will be used to issue the certificate"
+  type        = string
+  default     = null
+}

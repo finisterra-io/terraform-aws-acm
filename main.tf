@@ -1,6 +1,6 @@
 locals {
-  create_certificate          = var.create_certificate 
-  create_route53_records_only = var.create_route53_records_only 
+  create_certificate          = var.create_certificate
+  create_route53_records_only = var.create_route53_records_only
 
   # Get distinct list of domains and SANs
   distinct_domain_names = coalescelist(var.distinct_domain_names, distinct(
@@ -23,9 +23,10 @@ resource "aws_acm_certificate" "this" {
   subject_alternative_names = var.subject_alternative_names
   validation_method         = var.validation_method
   key_algorithm             = var.key_algorithm
+  certificate_authority_arn = var.certificate_authority_arn
 
   options {
-    certificate_transparency_logging_preference = var.certificate_transparency_logging_preference 
+    certificate_transparency_logging_preference = var.certificate_transparency_logging_preference
   }
 
   dynamic "validation_option" {
