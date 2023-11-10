@@ -57,10 +57,10 @@ variable "validation_method" {
   type        = string
   default     = null
 
-  validation {
-    condition     = contains(["DNS", "EMAIL", "NONE"], var.validation_method)
-    error_message = "Valid values are DNS, EMAIL or NONE."
-  }
+  # validation {
+  #   condition     = contains(["DNS", "EMAIL", "NONE"], var.validation_method)
+  #   error_message = "Valid values are DNS, EMAIL or NONE."
+  # }
 }
 
 variable "validation_option" {
