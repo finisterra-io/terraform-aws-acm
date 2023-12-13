@@ -13,7 +13,7 @@ variable "create_route53_records_only" {
 variable "validate_certificate" {
   description = "Whether to validate certificate by creating Route53 record"
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "validation_allow_overwrite_records" {
@@ -25,7 +25,7 @@ variable "validation_allow_overwrite_records" {
 variable "wait_for_validation" {
   description = "Whether to wait for the validation to complete"
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "validation_timeout" {
@@ -72,7 +72,7 @@ variable "validation_option" {
 variable "create_route53_records" {
   description = "When validation is set to DNS, define whether to create the DNS records internally via Route53 or externally using any DNS provider"
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "validation_record_fqdns" {
