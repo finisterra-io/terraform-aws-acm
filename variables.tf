@@ -1,3 +1,4 @@
+#variables.tf
 variable "create_certificate" {
   description = "Whether to create ACM certificate"
   type        = bool
