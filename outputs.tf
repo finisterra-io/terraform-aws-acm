@@ -29,6 +29,6 @@ output "distinct_domain_names" {
 }
 
 output "validation_domains" {
-  description = "List of distinct domain validation options. This is useful if subject alternative names contain wildcards."
+  description = "List of distinct domains validation options. This is useful if subject alternative names contain wildcards."
   value       = local.validation_domains
 }
