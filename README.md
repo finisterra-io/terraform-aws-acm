@@ -3,14 +3,14 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.40 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.67 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.40 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.67 |
 
 ## Modules
 
@@ -58,6 +58,6 @@ No modules.
 | <a name="output_acm_certificate_validation_emails"></a> [acm\_certificate\_validation\_emails](#output\_acm\_certificate\_validation\_emails) | A list of addresses that received a validation E-Mail. Only set if EMAIL-validation was used. |
 | <a name="output_arn"></a> [arn](#output\_arn) | The ARN of the certificate |
 | <a name="output_distinct_domain_names"></a> [distinct\_domain\_names](#output\_distinct\_domain\_names) | List of distinct domains names used for the validation. |
-| <a name="output_validation_domains"></a> [validation\_domains](#output\_validation\_domains) | List of distinct domain validation options. This is useful if subject alternative names contain wildcards. |
+| <a name="output_validation_domains"></a> [validation\_domains](#output\_validation\_domains) | List of distinct domains validation options. This is useful if subject alternative names contain wildcards. |
 | <a name="output_validation_route53_record_fqdns"></a> [validation\_route53\_record\_fqdns](#output\_validation\_route53\_record\_fqdns) | List of FQDNs built using the zone domain and name. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
